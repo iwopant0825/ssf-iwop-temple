@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--해상도 최적화-->
+
+    <title>녹차</title> <!--웹 사이트의 제목설정-->
+    <link href="icon.ico" rel="icon"> <!--웹사이트 상단 아이콘 설정-->
+    <style>
+
+        /* 페이지 전체 스타일 */
+        body {
+            margin: 0;  
+            padding: 0;
+            background-color: #f1f1f1;
+        }
+        /* 상단 고정 헤더 스타일 */
+
+        header {
+            top: 0;
+            width: 100%;
+            position: fixed;
+            background-color: #006809;
+            color: #fff;
+            text-align: center;
+        }
+
+        /* 중앙 컨텐츠 영역 스타일 */
+        section {
+            width: 50%;
+            margin: 0 auto;
+            padding: 100px 10%;
+            background-color: #fff;
+        }
+
+        /* 하단 푸터 스타일 */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* 차 이미지 스타일 */
+        img {
+            margin-right: 20px;
+            height: 25px;
+        }
+        
+        /* 차 이미지(바뀌는) 스타일 */
+        #tea {
+            height: 150px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <!-- 상단 헤더에 녹차 이미지와 제목 추가 -->
+        <h1><img class="tea" src="./texticon.png">녹차를 마시다</h1> <!--제목 이미지와 제목-->
+    </header>
+    <section>
+        <br> <!--줄 바꿈-->
+        <h2>녹차란?</h2> <!--소제목 설정-->
+        <p>
+            <!-- 녹차에 대한 간단한 설명 -->
+            녹차(綠茶)는 다양한 건강상의 이점과 풍부한 맛으로 인해 전 세계적으로 사랑받는 차 종류 중 하나입니다. <br>
+            주로 중국과 일본에서 유래된 녹차는 시그노핀이라는 차나무의 잎을 수확하여 가루 혹은 잎 형태로 가공합니다. 
+        </p>
+        <br><br>
+        <h2>특징</h2>
+        <p>
+            <strong>색상</strong> : 녹차의 이름처럼 짙은 녹색을 띠고 있습니다. 이는 차잎이 살려진 상태로 가공되기 때문입니다.<br><br>
+            <strong>맛과 향</strong> : 고유한 풀 향과 신맛을 가지고 있으며, 다양한 풍미를 즐길 수 있습니다. 미각과 후각에 특히 좋은 인상을 남깁니다.<br><br>
+            <strong>카페인 함량</strong> : 녹차는 홍차보다 카페인 함량이 낮습니다. 따라서 카페인 섭취를 줄이고 싶은 사람들에게 적합합니다. <br><br>
+        </p>
+        <br><br>
+        <h2>건강상의 이점</h2>
+        <p>
+            <strong>항산화 작용</strong> : 녹차에는 강력한 항산화 물질인 카테킨이 풍부하게 함유되어 있습니다. 항산화 작용으로 인해 세포 손상을 방지하고 면역 시스템을 강화하는 데 도움을 줍니다.<br><br>
+            <strong>심혈관 건강 개선</strong> : 녹차에는 심혈관 건강에 도움이 되는 폴리페놀과 카테킨이 함유되어 있습니다.<br> 혈압을 조절하고 혈관을 확장하여 심혈관 질환 위험을 줄이는 데 도움이 됩니다.<br><br>
+            <strong>대사 촉진</strong> : 녹차는 대사를 촉진하여 체중 관리에 도움을 줄 수 있습니다.<br><br>
+            <strong>진정 효과</strong> : 아미노산인 L-테아닌이 녹차에 함유되어 있어 진정 효과가 있을 수 있습니다.<br><br>
+        </p>
+        <br><br>
+        <h2>차 마셔보기</h2>
+        <br>
+        <p>
+            <!-- 이미지 클릭 시 이미지 변경 -->
+            클릭하여 마시기
+            <img id="tea" src="./img1.png" onclick=" 
+                document.getElementById('tea').src = './img2.png';
+                ">
+        </p>
+    </section>
+    <footer>
+        <!-- 하단 정보 추가 -->
+        <p>2023 소프트웨어 나눔축제. IWOP</p>
+    </footer>
+</body>
+</html>

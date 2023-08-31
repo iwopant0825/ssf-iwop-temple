@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js 이벤트 종류</title>
+</head>
+<body>
+    
+    <button onclick="changeText()">글자 변경</button> <!-- onclick : 클릭했을때 이벤트 발생 -->
+    <h1 id="text">변경전</h1> <!-- id : 고유한 이름을 가지고 있어야함 -->
+    <br>
+    <br>
+
+    <button onclick="changeImage()">이미지 변경</button>
+    <br>
+    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" alt="이미지" id="img">
+    <br>
+    <br>
+
+    <button onclick="changeStyle()">스타일 변경</button>
+    <div id="box" style="width: 100px; height: 100px; background-color: brown;"></div>
+    <br>
+    <br>
+
+
+    <script>
+
+        function changeText(){ // 함수 선언 
+            document.getElementById('text').innerHTML = "변경후"; // getElementById : id를 통해 해당하는 요소를 가져옴
+        }
+
+        function changeImage(){
+            document.getElementById('img').src = "https://image.munhwa.com/gen_news/201907/2019071201032712000003_b.jpg";  // src : 이미지 경로
+        }
+        
+        function changeStyle(){
+            document.getElementById('box').style.backgroundColor = "blue"; // style : 스타일 변경
+        }
+
+    </script>
+
+</body>
+</html>

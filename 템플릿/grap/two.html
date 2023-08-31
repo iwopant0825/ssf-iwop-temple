@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포도를 전하던가</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            height: 100px;
+            background-color: #6528F7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header h1 {
+            position: relative;
+            top: 15px;
+            font-size: 100px;
+            color: white;
+            margin: 0;
+        }
+
+        .nav {
+            height: 50px;
+            background-color: #D7BBF5;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .nav ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            list-style: none;
+        }
+
+        .nav ul li {
+            margin-right: 20px;
+        }
+
+        .nav ul li a {
+            text-decoration: none;
+            color: #A076F9;
+            font-weight: bold;
+        }
+
+        main {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: row-reverse;
+            margin: 100px 0;
+        }
+
+
+        .box_2{
+            flex-direction: row;
+        }
+
+        .box img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 10px 10px;
+        }
+
+        .box .text {
+            font-weight: bold;
+            padding: 20px;
+            color: #4A4A4A;
+        }
+        
+        .text p{
+            padding: 0 0px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        @media screen and (max-width: 767px) {
+            header {
+                height: 80px;
+            }
+
+            header h1 {
+                position: relative;
+                top: 23px;
+                font-size: 50px;
+                line-height: 60px;
+            }
+
+            main {
+                padding: 10px;
+            }
+
+            .box {
+                display: flex;
+                flex-direction: column-reverse;
+                margin-top: 50px;
+            }
+
+            .imge{
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Grape Delight</h1>
+    </header>
+
+    <div class="nav">
+        <ul>
+            <li><a href="http://www.rda.go.kr/middlePopOpenPopViewApi.do?no=1311&sj=%EB%A7%9B%EB%8F%84%20%EC%98%81%EC%96%91%EB%8F%84%20%EC%9C%BC%EB%9C%B8%EC%9D%B8%20%20%EC%8B%A0%EC%9D%B4%20%EB%82%B4%EB%A6%B0%20%EA%B3%BC%EC%9D%BC%20%E3%80%8C%ED%8F%AC%EB%8F%84%E3%80%8D">건강상 좋은점</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%ED%8F%AC%EB%8F%84">포도란?</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <div class="box">
+            <div class="imge">
+                <img src="https://images.unsplash.com/photo-1634033200138-9aafe85c18ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fCVFRCU4RiVBQyVFQiU4RiU4NHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            </div>
+            <div class="text">
+                <p>포도는 포도속(Vitis)에 속하는 식물로, 포도 색깔과 크기는 다양하며 주로 열매를 생산하기 위해 재배됩니다. 포도는 신선한 과일로 섭취되기도 하고, 와인, 주스, 건포도 등 다양한 식품과 음료로 가공되어 사용됩니다. <br><br>
+
+                    일반적으로 포도는 당도가 높고 씨가 작은 종류가 선호되며, 그 중에서도 주로 테이블 포도 또는 와인 생산용 포도로 구분됩니다. 테이블 포도는 주로 신선한 과일로 먹기 위해 재배되고, 와인 생산용 포도는 와인 제조에 사용되는데, 이러한 포도는 당도와 산도의 균형을 가지고 있어 와인의 특성에 영향을 줍니다.</p>
+            </div>
+        </div>
+
+        <div class="box box_2">
+            <div class="imge">
+                <img src="https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8JUVEJThGJUFDJUVCJThGJTg0JUVDJTgzJTkwJUVCJTlGJUFDJUVCJTkzJTlDfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="">   
+            </div>
+            <div class="text">
+                <p>포도의 건조한 형태인 건포도는 수분이 증발하고 당이 진하게 농축되어 달고 맛있는 간식으로 자주 즐겨먹습니다. 건포도는 고온으로 건조시키거나 황산 가스로 처리하는 등 다양한 방법으로 제조됩니다. <br><br>
+
+                    포도는 영양가가 높은 과일로, 비타민 C와 비타민 K, 그리고 각종 미네랄과 항산화제를 포함하고 있습니다. 또한 식이섬유도 풍부하여 소화와 변비 예방에 도움이 됩니다. 이러한 이유로 포도는 건강에 좋은 과일로 평가되며, 많은 사람들이 즐겨 섭취하는 과일 중 하나입니다.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>2023 소프트웨어 나눔축제. IWOP</p>
+    </footer>
+</body>
+</html>
